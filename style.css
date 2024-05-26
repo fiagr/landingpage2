@@ -48,6 +48,7 @@
 
         /* Header-sektion*/
         .header {
+        max-width: 100%;
         height: 815px;
         background-image: url(images/hero.jpg);
         background-size: cover;
@@ -57,34 +58,31 @@
         }
 
         /* Navigering*/
+        
         .navbar {
         color: rgb(255, 255, 255);
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        /* background-color: aquamarine; */
         }
     
         .links {
         display: flex;
         list-style-type: none;
-        /* background-color: rgb(122, 43, 226); */
         }
         .links li {
         margin: 10px;
         }
         .links a {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: white;
         font-size: 1em;
         text-decoration: none;
-        /* background-color: chartreuse; */
         }
     
+       
         /* Knapp i nav */
         .boxförknappmenu {
-        /* background-color: rgb(141, 43, 226); */
         width: 200px;
         height: 50px;
         display: flex;
@@ -94,8 +92,8 @@
         }
         
         .textrutahead {
-         /* background-color: rgb(75, 255, 30); */
-        width: 700px;
+        background-color: aqua;
+        max-width: 100%;
         height: auto;
         top: 40%;
         left: 25%;
@@ -107,8 +105,9 @@
         color: white;
         } 
         .boxförknapphead {
-         /* background-color: rgb(141, 43, 226); */
-         width: 500px;
+        max-width: 100%;
+         background-color: rgb(141, 43, 226);
+         max-width: 100%;
          height: 70px;
          display: flex;
          flex-direction: row;
@@ -116,7 +115,7 @@
          padding: 10px;
          }
 
-         .cta1 {
+        .cta1 {
         padding: 0px 40px;
         border: 1px solid;
         border-radius: 40px;
@@ -144,21 +143,23 @@
         .boxhero {
         background-color: aliceblue;
         height: auto;
-        width: auto;
+        max-width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding: 50px;
         }
         .imghero {
-        width: 500px;
+        width: 700px;
+        max-width: 100%;
         height: auto;
         display: flex;
         margin-right: 20px;
         }
         .boxtextknappar {
-        /* background-color: rgb(0, 47, 255); */
+        background-color: rgb(0, 47, 255);
         width: 500px;
+        max-width: 100%;        
         height: auto;
         display: flex;
         justify-content: center;
@@ -169,6 +170,7 @@
         .boxtext {
         /*  background-color:red; */
         width: 400px;
+        max-width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -178,6 +180,7 @@
         .boxknappar {
         /*  background-color: rgb(141, 43, 226); */
         width: 450px;
+        max-width: 100%;
         height: 70px;
         display: flex;
         flex-direction: row;
@@ -189,6 +192,7 @@
         .boxtestimonials {
         background-color: ghostwhite;
         background-size: cover;
+        max-width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -197,7 +201,7 @@
         }
         .storboxföromdömen {
         /* background-color:red; */
-        width: 100%;
+        max-width: 100%;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -208,6 +212,7 @@
         .boxvadsägervårastudenter{
          /* background-color: lightgreen; */
          width: 600px;
+         max-width: 100%;
          height: 80px;
          display: flex;
          justify-content: center;
@@ -215,6 +220,7 @@
         }
         .boxarföromdömen {
         width: 450px;
+        max-width: 100%;
         height: 400px;
         display: flex;
         flex-direction: column;
@@ -239,6 +245,7 @@
         .boxförimagesomdömen {
          /* background-color: coral; */
         width: 1200px;
+        max-width: 100%;
         height: auto;
         padding: 20px;
         display: flex;
@@ -251,6 +258,8 @@
         .boxföransökidag {
         background-color: aliceblue;
         background-size: cover;
+        max-width: 100%;
+        height: auto;
         display: flex;
         align-items: center;
         /*  justify-items: center; */
@@ -259,6 +268,8 @@
         }
         .boxtextsäkradinplats {
         /* background-color: rgb(83, 226, 43); */
+        max-width: 100%;
+        height: auto;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -267,6 +278,7 @@
         }
         .boxförknapp {
         /*  background-color: rgb(113, 43, 226); */
+        max-width: 100%;
         width: 500px;
         height: 70px;
         padding: 10px; 
@@ -281,38 +293,41 @@
         background-color: cornflowerblue;
         font-size: 1em;
         }
-
         .ctah {
-            padding: 0px 40px;
-            border: 1px solid;
-            border-radius: 40px;
-            background-color: white;
-            font-size: 1em;
-            color: cornflowerblue;
-            }
+        padding: 0px 40px;
+        border: 1px solid;
+        border-radius: 40px;
+        background-color: white;
+        font-size: 1em;
+        color: cornflowerblue;
+        }
 
     
         /* Footer*/
         footer {
         background-color: grey;
         background-position: bottom;
+        max-width: 100%;
         height: auto;
         padding-top: 20px;
         display: flex;
+        flex-direction: row;
         justify-content: flex-start;
         }
         .boxförlänkarfooter {
-        height: 380px;
+        max-width: 100%;
+        height: auto;
         width: auto; 
         display: flex;
         line-height: 2;
         } 
         .boxförkontakt {
-        height: 380px;
+        max-width: 100%;
+        height: auto;
         width: auto;
         display: flex;
         line-height: 2;
-        margin-right: 820px;
+        margin-right: 900px;
         margin-left: 20px;
         color: white;
         }
@@ -329,6 +344,7 @@
         .logofooter {
         display: flex;
         /*  background-color: forestgreen; */
+        max-width: 100%;
         width: 200px;
         height: 200px;
         margin-top: 50%;
