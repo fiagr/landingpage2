@@ -3,6 +3,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        box-sizing: border-box;
         }
     
         body {
@@ -46,7 +47,9 @@
 
         /* Header-sektion*/
         .header {
+        width: 100%;
         max-width: 100%;
+        max-height: 100%;
         height: 815px;
         background-image: url(images/hero.jpg);
         background-size: cover;
@@ -75,21 +78,12 @@
         text-decoration: none;
         }
     
-       
-        /* Knapp i nav */
-        .boxförknappmenu {
-        width: 200px;
-        height: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 10px;
-        }
         .textrutahead {
         max-width: 100%;
         height: auto;
+        align-self: center;
         top: 40%;
-        left: 25%;
+        left: 30%;
         text-align: center;
         align-items: center;
         display: flex;
@@ -106,29 +100,36 @@
         justify-content:center;
         padding: 10px;
         }
-        .cta1 {
+
+        /* Buttons */
+        .cta {
         padding: 0px 40px;
         border: 1px solid;
         border-radius: 40px;
         background-color: cornflowerblue;
         font-size: 1em;
+        }
+
+        .cta-primary {
+        color: black;
+        border-color: black;
+        }
+
+        .cta-secondary {
         color: white;
         border-color: white;
         }
-        .cta2 {
-        padding: 0px 40px;
-        border: 1px solid;
-        border-radius: 40px;
-        background-color: cornflowerblue;
-        font-size: 1em;
+
+        .cta-menu {
+        padding: 12px 24px;
+        } 
+
+        .cta-alt {
+        color: cornflowerblue;
+        background-color: aliceblue;
         }
-        .cta3 {
-        padding: 0px 40px;
-        border: 1px solid;
-        border-radius: 40px;
-        background-color: cornflowerblue;
-        font-size: 1em;
-        }
+        
+              
 
          /* Hero-sektion */
         .boxhero {
@@ -158,7 +159,6 @@
         margin-left: 20px;
         }
         .boxtext {
-        /*  background-color:red; */
         width: 400px;
         max-width: 100%;
         height: auto;
@@ -200,7 +200,7 @@
         .boxvadsägervårastudenter{
          width: 600px;
          max-width: 100%;
-         height: 80px;
+         height: auto;
          display: flex;
          justify-content: center;
          padding-top: 20px;
@@ -257,74 +257,63 @@
         line-height: 70px;
         margin-bottom: 90px;
         }
+
+        max-width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        padding: 10px;
+
         .boxförknapp {
         max-width: 100%;
-        width: 500px;
-        height: auto;
+        height: 70px;
         padding: 10px; 
         display:flex;
         flex-direction: row; 
-        justify-content: space-between;
+        justify-content: center;
         }
-        .cta {
-        padding: 30px 40px;
-        border: 1px solid;
-        border-radius: 40px;
-        background-color: cornflowerblue;
-        font-size: 1em;
-        }
-        .ctah {
-        padding: 30px 40px;
-        border: 1px solid;
-        border-radius: 40px;
-        background-color: white;
-        font-size: 1em;
-        color: cornflowerblue;
-        }
+       
 
-    
         /* Footer*/
         footer {
         background-color: grey;
-        background-position: bottom;
         max-width: 100%;
         height: auto;
         padding-top: 20px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        padding-left: 40px;
         }
         .boxförlänkarfooter {
         max-width: 100%;
-        height: auto;
         width: auto; 
-        display: flex;
         line-height: 2;
         } 
         .boxförkontakt {
         max-width: 100%;
-        height: auto;
         width: auto;
-        display: flex;
         line-height: 2;
         margin-left: 20px;
         color: white;
+        padding-left: 20px;
         }
         .linksfooter a {
         text-decoration: none;
         color: white;
-        font-size: 1em;
         } 
-        .footer li {
-        list-style-type: none; 
-        margin: 10px;
-        }
-        .logofooter {
+        .boxlogofooter {
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 30px;
+        }
+
+        .logofooter {
         max-width: 100%;
         width: 200px;
         height: auto;
-        margin-top: 30%;
-        margin-left: 450%;
+        
         }
